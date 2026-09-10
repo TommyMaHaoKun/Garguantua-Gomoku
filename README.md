@@ -6,7 +6,7 @@
 
 ## 下载与运行
 
-从 [最新发行版](https://github.com/TommyMaHaoKun/Garguantua-Gomoku/releases/latest) 下载 `Gargantua Public V1.0-Windows-x64.zip`，
+从 [最新发行版](https://github.com/TommyMaHaoKun/Garguantua-Gomoku/releases/latest) 下载 `Gargantua.Public.V1.0-Windows-x64.zip`，
 解压后双击 `Gargantua Public V1.0.exe`。
 
 - Windows 10 / 11，64 位 x64；不需要安装 Python、CUDA，也不需要账号或联网激活。
