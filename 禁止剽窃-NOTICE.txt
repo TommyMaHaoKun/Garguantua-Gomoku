@@ -1,0 +1,27 @@
+Gargantua Public V1.0
+Author / 作者：Haokun Ma
+禁止剽窃 / NO PLAGIARISM
+
+本发行版的作者署名为 Haokun Ma。原创代码、模型和原创内容的权利由相应权利人保留。
+仅允许运行本软件进行五子棋对弈，以及完整、原样转发包含本声明和第三方许可证的发行包。
+
+未经权利人书面许可，禁止：
+1. 将本模型或原创代码改名、换壳、署他人姓名，冒充自己或他人的独立成果。
+2. 提取模型权重，或将提取的权重单独复制、传播、出售、公开托管。
+3. 绕过模型保护以获取或传播模型权重。
+4. 将提取的模型用于其他产品、训练或微调，并冒充独立原创。
+5. 删除、伪造或篡改作者署名、权利声明及发行来源。
+
+“Public”是发行版本名称，并不表示源码或模型属于公有领域，也不授予模型开源许可。
+上述限制仅适用于原创部分；第三方组件保留各自许可证授予的权利。
+本声明不限制适用法律明确允许的行为。
+
+NO PLAGIARISM. Do not claim the original model or code as your own.
+Do not remove or falsify Haokun Ma's attribution. Without the rights holder's
+written permission, do not extract or separately redistribute model weights,
+bypass model protection to obtain them, or reuse extracted weights in other
+products or models. Share only the complete, unmodified release with notices.
+"Public" is a release name, not a public-domain dedication or an open-model license.
+Third-party license rights and statutory exceptions remain applicable.
+
+离线加密及原生编译用于增加提取成本，不能保证运行时模型绝对不可提取。
