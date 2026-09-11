@@ -1,0 +1,17 @@
+{
+  "name": "Gargantua 1.1 online",
+  "version": "1.1 online",
+  "author": "Haokun Ma",
+  "target": "Windows 10/11 x64",
+  "mode": "online, no model weights in client",
+  "server": "https://gargantua-online-357534767492.asia-east1.run.app",
+  "exe_sha256": "ee64825f24449390392d850e030904d8be0c25462d09a597357b618da6b2de59",
+  "exe_bytes": 28437413,
+  "archive_model_scan": "PASS",
+  "python": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]",
+  "packages": {
+    "pygame": "2.6.1",
+    "numpy": "2.2.6",
+    "pyinstaller": "6.22.2"
+  }
+}

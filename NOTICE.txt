@@ -1,0 +1,25 @@
+Gargantua 1.1 online
+Author / 作者：Haokun Ma
+禁止剽窃 / NO PLAGIARISM
+
+本发行版的作者署名为 Haokun Ma。原创代码、模型和原创内容的权利由相应权利人保留。
+本客户端不含模型权重；对弈由作者托管的在线推理服务完成。
+仅允许运行本软件进行五子棋对弈，以及完整、原样转发包含本声明和第三方许可证的发行包。
+
+未经权利人书面许可，禁止：
+1. 将本模型或原创代码改名、换壳、署他人姓名，冒充自己或他人的独立成果。
+2. 提取模型权重，或将提取的权重单独复制、传播、出售、公开托管。
+3. 绕过模型保护或未授权访问在线服务以获取或传播模型权重。
+4. 将模型用于其他产品、训练或微调，并冒充独立原创。
+5. 删除、伪造或篡改作者署名、权利声明及发行来源。
+
+模型权重仅存放于作者控制的私有服务器，客户端只发送棋局、接收落子。
+“1.1 online”是发行版本名称，并不表示源码或模型属于公有领域，也不授予开源许可。
+上述限制仅适用于原创部分；第三方组件保留各自许可证授予的权利。
+本声明不限制适用法律明确允许的行为。
+
+NO PLAGIARISM. Do not claim the original model or code as your own. This client
+ships no weights; play is served by the author's hosted inference service. The
+trained weights live only on the author's private server. Do not extract or
+redistribute weights, bypass protection or make unauthorized use of the service.
+Share only the complete, unmodified release with notices.

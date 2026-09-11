@@ -1,36 +1,43 @@
 # Garguantua Gomoku
 
-**Gargantua Public V1.0 · Author: Haokun Ma**
+**Gargantua 1.1 online · Author: Haokun Ma**
 
-离线五子棋 AI 的 Windows 发行仓库。此仓库提供程序下载与使用说明。
+在线五子棋 AI 的 Windows 发行仓库。1.1 online 客户端**不含模型权重**,对弈由作者
+托管的在线推理服务完成——客户端只发送棋局、接收落子。运行需要联网。
 
 ## 下载与运行
 
-从 [最新发行版](https://github.com/TommyMaHaoKun/Garguantua-Gomoku/releases/latest) 下载 `Gargantua.Public.V1.0-Windows-x64.zip`，
-解压后双击 `Gargantua Public V1.0.exe`。
+从 [最新发行版](https://github.com/TommyMaHaoKun/Garguantua-Gomoku/releases/latest)
+下载 `Gargantua 1.1 online.exe`,双击运行。
 
-- Windows 10 / 11，64 位 x64；不需要安装 Python、CUDA，也不需要账号或联网激活。
-- 自动检测支持的 GPU 并用于模型推理；无法使用或执行出错时回退 CPU。
-- 侧边栏显示当前使用的 GPU / CPU。
-- 可选 9×9、13×13、15×15、19×19 棋盘。切换大小会保存并结束当前对局。
-- 胜负显示在侧边栏，棋盘始终完整可见。
+- Windows 10 / 11,64 位 x64;无需安装 Python,也无需账号。
+- **需要联网**:AI 由在线服务计算。首次连接若服务器休眠,会自动等待其唤醒(约 10–20 秒)。
+- 可选 9×9、13×13、15×15、19×19 棋盘。
+- 胜负显示在侧边栏,棋盘始终完整可见。
 
-U / Backspace：悔棋；R / Enter：重开；C：切换执子；S：显示评分。
-更多信息见 [使用说明](README.txt)。
+U / Backspace:悔棋;R / Enter:重开;C:切换执子;S:显示评分。
+更多信息见 [使用说明](README.txt) 与 [版权声明](NOTICE.txt)。
 
-![19×19 棋盘与侧边栏](preview/19x19.png)
+### 指定服务器(可选)
 
-## 验证与兼容性
+客户端默认连接内置地址。也可用环境变量临时覆盖后再启动:
 
-发行程序已在 RTX 5060 Laptop GPU 上验证 GPU 和 CPU 两种模式，覆盖四种棋盘大小。
-其他显卡依启动时的实际检测结果决定，尚未逐一实机验证。
-原模型训练尺寸为 19×19；小棋盘没有单独训练，不应认为棋力相同。
-此版本尚无数字签名。
+```
+set GARGANTUA_SERVER=https://你的服务地址
+```
 
-## 作者与使用范围
+## 为什么是"在线"
 
-**Haokun Ma · 禁止剽窃 / NO PLAGIARISM**
+离线发行版会把模型打包进 EXE,权重可从进程/文件中被提取。1.1 online 把模型放在
+作者控制的服务器上,**权重不随客户端分发**,这是真正防止权重被提取的形态。
 
-允许按随附声明运行软件和原样转发完整发行包。禁止冒充原创作者、删除署名，
-以及未经许可提取、传播或出售模型权重。“Public”表示公开发行，不表示模型开源或公有领域。
-详细条款见 [禁止剽窃声明](禁止剽窃-NOTICE.txt)；第三方组件保留其各自许可证授予的权利，见 [licenses](licenses)。
+## 版本
+
+- **1.1 online**(当前):在线客户端,无本地权重。
+- **V1.0 离线**:见 [`offline-v1.0/`](offline-v1.0/) 目录(说明与预览);安装包见对应发行版。
+
+---
+
+NO PLAGIARISM. This client ships no model weights; play is served by the author's
+hosted inference service. Do not extract or redistribute weights, or claim the
+original model or code as your own. See [NOTICE.txt](NOTICE.txt).
